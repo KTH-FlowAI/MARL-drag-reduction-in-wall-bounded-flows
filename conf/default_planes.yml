@@ -1,0 +1,29 @@
+---
+  # List of planes that need to be monitored/sent via MPI
+
+planes:
+  - name: 'streamwise shear stress'
+    pltype: 2
+    var: 1
+    coord: -0.9988
+    namfile: 'uxz_yp0.pl'
+  - name: 'wall-normal velocity at y+=15'
+    pltype: 2
+    var: 2
+    coord: -0.83147
+    namfile: 'vxz_yp15.pl'
+  - name: 'streamwise velocity at y+=15'
+    pltype: 2
+    var: 1
+    coord: -0.83147
+    namfile: 'uxz_yp15.pl'
+  - name: 'streamwise shear stress'
+    pltype: 2
+    var: 1
+    coord: -0.9988
+    namfile: 'uxz_yp0.pl'
+  - name: 'blowing and suction profile'
+    pltype: 2
+    var: 2
+    coord: -1
+    namfile: 'vxz_yp0.pl'

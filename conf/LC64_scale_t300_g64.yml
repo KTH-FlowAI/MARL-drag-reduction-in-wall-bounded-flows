@@ -1,0 +1,53 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+runner:
+    ctrl_min_amp: -0.04285714285714286
+    ctrl_max_amp: 0.04285714285714286
+
+    partial_reward: False
+
+    nb_interactions: 1000
+
+    nb_episodes : 100
+
+    train_steps : 10
+    gradient_steps : 64
+
+    RL_algorithm : 'DDPG'
+    custom_policy : True
+    policy_file : '../conf/default_custom_policy.yml'
+    action_noise: 0.004285714285714286
+
+    normalize_input : 'utau'
+
+simulation:
+    init_field: '../../../data/baseline/init_64x65x64_2pi_000.u'
+
+    dt : 0.007
+
+    xl : 12.56637061
+    varsiz: False
+
+    wbci: 7
+
+    nctrlz: 64
+    nctrlx: 64
+    zchange: 1.
+    xchange: 1.
+
+    ixys : 512
+    ixyss : 1024
+
+    npl: 3
+
+    ndrl: 80
+
+    nproc: 2
+    nx: 64
+    ny: 65
+    nz: 64
+
+    nxjet: 1
+    nzjet: 1
+    nxs: 16
+    nzs: 16
